@@ -1,0 +1,15 @@
+<div class="container">
+  <header class="jumbotron">
+    <section>
+      <div class="coming-soon">
+          <div class="time-countdown" *ngIf="!muerto; else muertom ">
+              <ul>
+                <countdown [config]="{ leftTime: tiempo }"></countdown>
+                
+              </ul>
+          </div>
+          <ng-template #muertom><p> Te as muerto </p></ng-template>
+      </div>
+  </section>
+  </header>
+</div>
